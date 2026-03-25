@@ -11,7 +11,7 @@ pipeline {
 
         stage('Clone Code') {
             steps {
-                git 'https://github.com/21mohitsen/php-app.git'
+                git branch: 'main', url: 'https://github.com/21mohitsen/php-app.git'
             }
         }
 
